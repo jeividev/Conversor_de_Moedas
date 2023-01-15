@@ -1,0 +1,61 @@
+* {
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+input{
+  color: #000;
+}
+
+.container {
+  height: 12rem;
+  width: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #003863;
+  border-radius: 0.8rem;
+}
+
+.campos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 0 0 0.4rem;
+}
+
+.campos > * {
+  font-size: 1rem;
+  margin: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #aacaff;
+  border: 0.1rem solid #1b0641;
+}
+
+.campos > select {
+  margin-right: 5px;
+}
+
+.inputMoeda {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.inputMoeda::-webkit-outer-spin-button,
+.inputMoeda::-webkit-inner-spin-button,
+.inputMoeda {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+

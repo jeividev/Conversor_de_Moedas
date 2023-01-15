@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <title>Cotações - Conversor de Moedas</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/convMoedas.css" />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Conversor</h1>
+
+      <main class="conversor">
+        <div class="campos">
+          <select id="tipoMoedaAtual" onchange="atualizaValores()">
+            <option value="BRL" selected>BRL</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <input type="number" id="valorAtual" class="inputMoeda" onkeyup="atualizaValores()" />
+        </div>
+
+        <div class="campos">
+          <select id="tipoMoedaConvertida" onchange="atualizaValores()">
+            <option value="BRL">BRL</option>
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <input type="number" id="valorConvertido" class="inputMoeda" disabled />
+        </div>
+      </main>
+    </section>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
